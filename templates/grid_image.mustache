@@ -1,0 +1,18 @@
+<div class="card-header text-truncate">{{{sectionname}}}{{#notavailable}}
+    <div data-region="sectionbadges" class="sectionbadges d-flex">
+        {{$ core_courseformat/local/content/section/badges }}
+            {{> core_courseformat/local/content/section/badges }}
+        {{/ core_courseformat/local/content/section/badges }}
+    </div>
+{{/notavailable}}</div>
+{{#imageuri}}
+    <div class="grid-image card-img-bottom text-center">
+        <img src="{{imageuri}}" alt="{{imagealttext}}" loading="lazy">
+        {{#sectioncompletionmarkup}}{{{sectioncompletionmarkup}}}{{/sectioncompletionmarkup}}
+    </div>
+{{/imageuri}}
+{{#generatedimageuri}}
+    <div class="grid-generatedimage card-img-bottom text-center" style="background-image: url('{{generatedimageuri}}');">
+        {{#sectioncompletionmarkup}}{{{sectioncompletionmarkup}}}{{/sectioncompletionmarkup}}
+    </div>
+{{/generatedimageuri}}
