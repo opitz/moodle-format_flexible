@@ -1,9 +1,28 @@
-<div class="placeholder">
+<div class="test">
+    A test div.
+</div>
+
+<div class="placeholderxxx">
+    <h3 class="expandable-header">{{sectionname}}</h3>
     {{#imageuri}}
         <div class="expandable-image card-img-left text-center">
             <img src="{{imageuri}}" alt="{{imagealttext}}" loading="lazy">
             {{#sectioncompletionmarkup}}{{{sectioncompletionmarkup}}}{{/sectioncompletionmarkup}}
         </div>
     {{/imageuri}}
+    {{^notavailable}}</a>{{/notavailable}}
+    {{#generatedimageuri}}
+        <div class="expandable-image expandable-generatedimage card-img0 text-center" style="height: 140px; width: 186px; background-image: url('{{generatedimageuri}}');">
+        </div>
+    {{/generatedimageuri}}
+    {{#image}}
+        <div class="grid-image-name0 card-footer0">
+            {{!image}}
+        </div>
+    {{/image}}
+
     {{{summarytext}}}
+    {{#section}}
+        {{> format_flexible/local/content/modules}}
+    {{/section}}
 </div>

@@ -220,6 +220,7 @@ class content extends format_grid_content {
                 if ($data->gridsections && isset($section->expandable)) {
                     $data->gridsections[$key]->expandable = true;
                     $data->gridsections[$key]->summarytext = strip_tags($section->summary->summarytext);
+                    $data->gridsections[$key]->section = $data->sections[$key];
                 }
             }
             // End WIP.

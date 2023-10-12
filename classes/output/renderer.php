@@ -26,7 +26,7 @@ use format_grid\output\renderer as format_grid_renderer;
  * @copyright  2023 onwards UCL <m.opitz@ucl.ac.uk>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class renderer extends format_grid_renderer {
+class renderer extends section_renderer {
 
     /**
      * Constructor method, calls the parent constructor.

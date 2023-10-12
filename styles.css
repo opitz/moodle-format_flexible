@@ -99,6 +99,11 @@
     height: 140px;
 }
 
+.format-flexible .thegrid .expandable-generatedimage {
+    background-size: contain;
+    height: 140px;
+}
+
 /*rtl:begin:ignore*/
 .format-grid .thegrid .grid-image img {
     left: 50%;
@@ -214,4 +219,10 @@
 
 .gd-selection-selector-item.nextsection {
     justify-content: flex-end;
+}
+
+.btn-section-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

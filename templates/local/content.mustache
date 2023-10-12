@@ -158,6 +158,7 @@
         }
     }
 }}
+flexible content.mustache
 <div id="{{uniqid}}-course-format">
     <h2 class="accesshide">{{{title}}}</h2>
     <div style="text-align: center; background-color: #0a78d1; color: #fff">>>>This is flexible content.<<<</div>
@@ -223,7 +224,7 @@
     {{/bulkedittools}}
 </div>
 {{#js}}
-    require(['format_grid/local/content'], function(component) {
+    require(['format_flexible/local/content'], function(component) {
     component.init('{{uniqid}}-course-format', {}, {{sectionreturn}});
     });
 {{/js}}
